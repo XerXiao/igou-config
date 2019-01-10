@@ -1,12 +1,6 @@
 server:
   port: 9527
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:7001/eureka
-  instance:
-      instance-id: gateway-9527.com
-      prefer-ip-address: false
+
 zuul:
   routes:
     #配置别名，只要用户输入/user/之类的路径名则映射到设置的服务名上
