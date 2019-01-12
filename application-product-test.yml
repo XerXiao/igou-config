@@ -1,0 +1,13 @@
+server:
+  port: 8002
+spring:
+  application:
+    name: product-service
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/aigou_product
+    username: root
+    password: 123456
+mybatis-plus:
+  mapper-locations: classpath:com/xer/igou/mapper/*Mapper.xml
+  type-aliases-package: com.xer.igou.domain,com.xer.igou.query
