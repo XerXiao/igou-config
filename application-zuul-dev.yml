@@ -8,6 +8,8 @@ zuul:
     plat.path: "/plat/**"
     product.serviceId: product-service
     product.path: "/product/**"
+    common.serviceId: common-service
+    common.path: "/common/**"
   #配置禁用使用服务名访问服务，如果不进行配置，使用别名、服务名都可以访问到服务
   #这里配置*指禁用所有的服务使用服务名访问，否则需要一个一个配置
   ignored-services: "*"
