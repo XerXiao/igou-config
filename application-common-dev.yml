@@ -6,4 +6,7 @@ spring:
 feign:
   hystrix:
     enabled: false
+ribbon:
+    ReadTimeout: 61000
+    ConnectTimeout: 61000
 
