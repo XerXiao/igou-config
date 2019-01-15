@@ -2,6 +2,9 @@ server:
   port: 9527
 
 zuul:
+  host:
+    connect-timeout-millis: 10000
+    socket-timeout-millis: 60000
   routes:
     #配置别名，只要用户输入/user/之类的路径名则映射到设置的服务名上
     plat.serviceId: plat-service
@@ -18,3 +21,10 @@ zuul:
 spring:
   application:
     name: zuul-gateway
+hystrix:
+   command:
+       default:
+	   execution:
+	       isolation:
+		   thread:
+		       timeoutInMilliseconds: 60000
