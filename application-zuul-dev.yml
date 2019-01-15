@@ -15,12 +15,6 @@ zuul:
   ignored-services: "*"
   #设置访问前缀
   prefix: /services
-  host: 
-      socket-timeout-millis: 10000
-      connect-timeout-millis: 10000
 spring:
   application:
     name: zuul-gateway
-ribbon:
-    eureka:
-        enabled: false
