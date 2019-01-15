@@ -22,9 +22,9 @@ spring:
   application:
     name: zuul-gateway
 hystrix:
-   command:
-       default:
-	   execution:
-	       isolation:
-		   thread:
-		       timeoutInMilliseconds: 60000
+    command:
+        default:
+            execution:
+                isolation:
+                    thread:
+                        timeoutInMilliseconds: 60000
