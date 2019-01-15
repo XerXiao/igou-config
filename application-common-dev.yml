@@ -1,6 +1,8 @@
 server:
   port: 8010
-  max-http-header-size=10000000
+  max-http-header-size: 10000000
+  tomcat:
+      max-http-post-size: 10000000
 spring:
   application:
     name: common-service
