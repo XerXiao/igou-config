@@ -18,15 +18,4 @@ zuul:
 spring:
   application:
     name: zuul-gateway
-hystrix:
-    command:
-        default:
-            execution:
-                isolation:
-                    thread:
-                        timeoutInMilliseconds: 250000
-ribbon:
-  ReadTimeout: 250000
-  ConnectTimeout: 250000
-  MaxAutoRetries: 0
-  MaxAutoRetriesNextServer: 1
+
